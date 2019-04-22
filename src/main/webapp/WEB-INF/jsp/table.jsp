@@ -135,7 +135,7 @@
 		
 		<div class="dropdown">
 			<div class="row" style="margin-left: 5px">
-				<form action="/fulltable" method="get"><button class="dropbtn" type="submit"  style="width : 40px; text-align: center; border-radius: 50%;"><b>U+P</b></button></form>
+				<form action="/fulltable" method="get"><button class="dropbtn" type="submit"  style="width : 40px; text-align: center; border-radius: 50%;"><b>F</b></button></form>
 				<form action="/table" method="get"><button class="dropbtn" type="submit"  style="width : 40px; text-align: center; border-radius: 50%;"><b>U</b></button></form>
 				 <button onclick="newenteryFunc()" class="dropbtn" style="width : 40px; text-align: center; border-radius: 50%;"><b>+</b></button>
 			</div>
