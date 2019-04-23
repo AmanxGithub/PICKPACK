@@ -103,7 +103,7 @@
                 <div class="col-md-12">
                   <div class="title-box-2">
                     <h1  >
-                      <span style="color: #ffffff">Admin Sravya</span>
+                      <span style="color: #ffffff">Admin Login</span>
                     </h1>
                   </div>
                   <div>
