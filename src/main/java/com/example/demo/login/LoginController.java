@@ -96,7 +96,7 @@ public class LoginController {
     	
     	ModelAndView model;
     	model= new ModelAndView("redirect:/login");
-    	redir.addFlashAttribute("successlogedout", "Sucessfully Loged Out!");
+    	redir.addFlashAttribute("successlogedout", "Successfully Logged Out!");
         session.invalidate();
        return model;
     }
