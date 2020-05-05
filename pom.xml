@@ -35,7 +35,7 @@
 		<dependency>
 		    <groupId>mysql</groupId>
 		    <artifactId>mysql-connector-java</artifactId>
-		    <version>8.0.12</version>
+		    <version>8.0.15</version>
 		</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
@@ -47,10 +47,17 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
-			<scope>provided</scope>
+			<version>9.0.19</version>
+		</dependency>
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
 		</dependency>
 		
 		
@@ -61,10 +68,10 @@
 		<scope>provided</scope>
 	  </dependency>
 	  
-	  <dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
-		</dependency>
+<!--	  <dependency>-->
+<!--			<groupId>javax.servlet</groupId>-->
+<!--			<artifactId>jstl</artifactId>-->
+<!--		</dependency>-->
 		
 	</dependencies>
 
@@ -76,23 +83,23 @@
 			</plugin>
 	
 	
-	<plugin>
-      <groupId>com.spotify</groupId>
-      <artifactId>docker-maven-plugin</artifactId>
-      <configuration>
-        <imageName>pickpack</imageName>
-        <baseImage>java:8</baseImage>
-        <entryPoint>["java", "-jar", "/${project.build.finalName}.war"]</entryPoint>
-        <!-- copy the service's jar file from target into the root directory of the image --> 
-        <resources>
-           <resource>
-             <targetPath>/</targetPath>
-             <directory>${project.build.directory}</directory>
-             <include>${project.build.finalName}.war</include>
-           </resource>
-        </resources>
-      </configuration>
-       </plugin>
+<!--	<plugin>-->
+<!--      <groupId>com.spotify</groupId>-->
+<!--      <artifactId>docker-maven-plugin</artifactId>-->
+<!--      <configuration>-->
+<!--        <imageName>pickpack</imageName>-->
+<!--        <baseImage>java:8</baseImage>-->
+<!--        <entryPoint>["java", "-jar", "/${project.build.finalName}.war"]</entryPoint>-->
+<!--        &lt;!&ndash; copy the service's jar file from target into the root directory of the image &ndash;&gt; -->
+<!--        <resources>-->
+<!--           <resource>-->
+<!--             <targetPath>/</targetPath>-->
+<!--             <directory>${project.build.directory}</directory>-->
+<!--             <include>${project.build.finalName}.war</include>-->
+<!--           </resource>-->
+<!--        </resources>-->
+<!--      </configuration>-->
+<!--       </plugin>-->
 	
 			
 		</plugins>
